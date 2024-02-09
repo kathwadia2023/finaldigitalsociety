@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comittee Members</title>
+
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Footer CSS start -->
+<style>
+
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+    
+    html {
+      font-size: 100%;
+    }
+    
+    body {
+      font-family: acumin-pro, system-ui, sans-serif;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      font-size: 14px;
+      background-color: #f4f4f4;
+      align-items: start;
+      min-height: 100vh;
+    }
+    
+    .footer {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 30px 30px 20px 30px;
+      color: #2f2f2f;
+      background-color: #fff;
+      border-top: 1px solid #e5e5e5;
+    }
+    
+    .footer > * {
+      flex:  1 100%;
+    }
+    
+    .footer__addr {
+      margin-right: 1.25em;
+      margin-bottom: 2em;
+    }
+    
+    .footer__logo {
+      font-family: 'Pacifico', cursive;
+      font-weight: 400;
+      text-transform: lowercase;
+      font-size: 1.5rem;
+    }
+    
+    .footer__addr h2 {
+      margin-top: 1.3em;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    
+    .nav__title {
+      font-weight: 400;
+      font-size: 15px;
+    }
+    
+    .footer address {
+      font-style: normal;
+      color: #999;
+    }
+    
+    .footer__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      max-width: max-content;
+      background-color: rgb(33, 33, 33, 0.07);
+      border-radius: 100px;
+      color: #2f2f2f;
+      line-height: 0;
+      margin: 0.6em 0;
+      font-size: 1rem;
+      padding: 0 1.3em;
+    }
+    
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .footer li {
+      line-height: 2em;
+    }
+    
+    .footer a {
+      text-decoration: none;
+    }
+    
+    .footer__nav {
+      display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .footer__nav > * {
+      flex: 1 50%;
+      margin-right: 1.25em;
+    }
+    
+    .nav__ul a {
+      color: #999;
+    }
+    
+    .nav__ul--extra {
+      column-count: 2;
+      column-gap: 1.25em;
+    }
+    
+    .legal {
+      display: flex;
+      flex-wrap: wrap;
+      color: #999;
+    }
+      
+    .legal__links {
+      display: flex;
+      align-items: center;
+    }
+    
+    .heart {
+      color: #2f2f2f;
+    }
+    
+    @media screen and (min-width: 24.375em) {
+      .legal .legal__links {
+        margin-left: auto;
+      }
+    }
+    
+    @media screen and (min-width: 40.375em) {
+      .footer__nav > * {
+        flex: 1;
+      }
+      
+      .nav__item--extra {
+        flex-grow: 2;
+      }
+      
+      .footer__addr {
+        flex: 1 0px;
+      }
+      
+      .footer__nav {
+        flex: 2 0px;
+      }
+    }
+    
+    </style>
+    <!-- Footer CSS END -->
+
+</head>
+<body style="background-image: url(/static/images/bg.jpg); background-size:cover;">
+
+<!-- Nav bar start -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   
+       
+  <a class="navbar-brand" href="#">
+    <img src="/static/images/logo_png.png" alt="" width="100" height="65">
+  </a>
+
+<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/">Home</a>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Soceity
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="/event">Events</a></li>
+    <li><a class="dropdown-item" href="/event">Gallery</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/event">Review us</a></li>
+  </ul>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/com_member">Committee Members</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/go_green">GO Green</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" href="/contact">Promotion</a>
+</li>
+</ul>
+<form class="d-flex">
+<!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+<!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+<!-- <button type="button" class="btn btn-success mx-2">Login</button> -->
+<button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+  Login
+</button>
+<!-- <button type="button" class="btn btn-warning mx-2">Sign Up</button> -->
+
+<button type="button" class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">
+  Sign UP
+</button>
+
+</form>
+</div>
+</div>
+</nav>
+<!-- Nav Bar end -->
+
+<!-- modal loginin modal start -->
+<!-- Modal Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+        <form method='POST'>
+          
+          {% csrf_token %}
+   
+          <div class="cmb-3">
+            <label for="validationCustom04" class="form-label">Role</label>
+            <select class="form-select" name="role" id="validationCustom04" required>
+              <option selected disabled value="">Choose Role...</option>
+              <option>Committee Member</option>
+              <option>Resdiential Member </option>
+              <br></select></div>
+              <br>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1"  class="form-label">Password</label>
+            <input type="password" class="form-control" name="password"  id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary" name="login" value="login" >Login</button>
+          <a href="/resetpass"  class="btn btn-warning" name="" value="" >Forgot Password</a>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal login modal end -->
+
+<!-- Modal signup start -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: #0480be;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Welcome to Signup Member!!!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+<!-- form -->
+<form method="POST"  class="row g-3 needs-validation" novalidate>
+  {% csrf_token %}
+    <div class="col-md-6">
+      <label for="validationCustom01"  class="form-label">First name</label>
+      <input type="text" name="firstname" class="form-control" id="validationCustom01" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="validationCustom02"  class="form-label">Last name</label>
+      <input type="text" name="lastname" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="validationCustomUsername"  class="form-label">Email</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" name="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a email.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationCustom01"  class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+ 
+
+
+<div class="col-md-4">
+      <label for="validationCustom04" class="form-label">Wing / Block Type</label>
+      <select class="form-select" name="wing" id="validationCustom04" required>
+        <option selected disabled value="">Wing/block...</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+       
+
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid Wing choice.
+      </div>
+    </div>
+
+
+<div class="col-md-5">
+      <label for="validationCustom04" class="form-label">Role</label>
+      <select class="form-select" name="role" id="validationCustom04" required>
+        <option selected disabled value="">Choose Role...</option>
+        <option>Committee Member</option>
+        <option>Resdiential Member </option>
+        
+
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid Member choice.
+      </div>
+    </div>
+
+
+
+
+
+    <div class="col-md-3">
+      <label for="validationCustom03"  class="form-label">Block no.</label>
+      <input type="number" name="block" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid block number.
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <label for="validationCustom03"  class="form-label">City</label>
+      <input type="text" name="city" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" name="state" id="validationCustom04" required>
+        <option selected disabled value="">Choose State...</option>
+        <option>Gujarat</option>
+        <option>Rajasthan</option>
+        <option>Maharashtra</option>
+        <option>Other</option>
+
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="validationCustom05"  class="form-label">Mobile</label>
+      <input type="number" name="mobile" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid Mobile number.
+      </div>
+    </div>
+<!-- 
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div> -->
+
+    <div class="col-12">
+      <button class="btn btn-primary" name="signup" value="signup" data-bs-target="#otp_verify" type="submit">Sign up</button>
+    </div>
+    
+  </form>
+
+<!-- form -->
+ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" >Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal signup End -->
+
+
+<br>
+<h2 style="color: crimson;"><center>Our Comittee Members</center></h2>
+<hr>
+
+<!-- Members Card start-->
+
+<div class="container">
+<div class="row" style="padding-left: px;">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="/static/images/member_1.png" class="card-img-top" alt="...">
+        <br>
+        <div class="card-body">
+          <h5 class="card-title">Mr S Kumar</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>   
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <img src="/static/images/Abhi_circle.png" class="card-img-top" alt="...">
+        <br>
+        <div class="card-body">
+          <h5 class="card-title">Mr Abhishek Kathwadia</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+    </div>
+      </div>
+    </div>
+ 
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="/static/images/member_2.jpg" class="card-img-top" alt="...">
+          <br>
+          <div class="card-body">
+            <h5 class="card-title">Mr A Rudra </h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+<!-- card end -->
+<!-- Members Card end-->
+
+
+<hr>
+
+<br>
+<!-- Footer Start -->
+  <header>
+  <!-- Content -->
+  </header>
+
+  <main>
+  <!-- Content -->
+  </main>
+
+  <footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Digital Soceity</h1>
+        
+    <h2>Address</h2>
+    
+    <address>
+      Suncity, Bopal, Ahemdabad, Gujarat [India]<br>
+          
+      <a class="footer__btn" href="mailto:djangotestingpython@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Events</a>
+        </li>
+
+        <li>
+          <a href="#"></a>
+        </li>
+            
+        <li>
+          <a href="#">Promotional Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Quick Links</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="/comittee">Committee Member</a>
+        </li>
+        <li>
+          <a href="/gogreen">GO Green</a>
+        </li>
+        <li>
+          <a href="/contact">Contact us</a>
+        </li>
+        
+      
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="https://rcs.delhi.gov.in/disclaimer">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="https://rcs.delhi.gov.in/disclaimer">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="https://maps.app.goo.gl/kECd7rzTHZRkCHXB7">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2023 Digital Soceity. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with Django <span class="heart"> ♥</span> remotely from Anywhere -Abhishek Kathwadia</span>
+    </div>
+  </div>
+  </footer>
+<!-- Footer  end-->
+
+
+
+</body>
+</html>
